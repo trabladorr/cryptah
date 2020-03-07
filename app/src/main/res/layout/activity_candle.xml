@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/spinner_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        >
+
+        <Spinner
+            android:id="@+id/spinner_coin"
+            android:layout_width="@dimen/spinner_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@id/spinner_currency"
+            android:entries="@array/coins_default"
+            android:layout_weight="1"/>
+
+        <Spinner
+            android:id="@+id/spinner_currency"
+            android:entries="@array/currencies_default"
+            android:layout_width="@dimen/spinner_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@id/spinner_exchange"
+            android:layout_weight="1"/>
+
+        <Spinner
+            android:id="@+id/spinner_interval"
+            android:entries="@array/exchanges_default"
+            android:layout_width="@dimen/spinner_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinner_exchange"
+        android:entries="@array/exchanges_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/spinner_line"
+        android:layout_weight="1"/>
+
+    <com.github.mikephil.charting.charts.CombinedChart
+        android:id="@+id/chart_candle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/spinner_exchange" />
+
+</RelativeLayout>

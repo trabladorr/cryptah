@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Cryptah</string>
+    <string name="title_activity_candle">Cryptah</string>
+
+    <string-array name="coins_default">
+        <item>Coin</item>
+    </string-array>
+
+    <string-array name="currencies_default">
+        <item>Currency</item>
+    </string-array>
+
+    <string-array name="exchanges_default">
+        <item>None</item>
+    </string-array>
+
+
+</resources>
