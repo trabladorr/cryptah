@@ -5,6 +5,7 @@ Simple app retrieving and displaying trade and volume history graphs for selecte
 Made possible by:
 
 https://www.cryptocompare.com/api/# - data source
+
 https://github.com/PhilJay/MPAndroidChart - chart library
 
 Available on Play Store:
