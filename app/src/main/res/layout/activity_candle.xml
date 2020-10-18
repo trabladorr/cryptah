@@ -1,59 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/spinner_line"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:orientation="horizontal"
-        android:weightSum="3"
-        >
+        android:weightSum="3">
 
         <Spinner
             android:id="@+id/spinner_coin"
             android:layout_width="@dimen/spinner_width"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_toStartOf="@id/spinner_currency"
-            android:entries="@array/coins_default"
-            android:layout_weight="1"/>
+            android:layout_gravity="start|center_vertical"
+            android:layout_weight="1"
+            android:entries="@array/coins_default" />
 
         <Spinner
             android:id="@+id/spinner_currency"
-            android:entries="@array/currencies_default"
             android:layout_width="@dimen/spinner_width"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_toStartOf="@id/spinner_exchange"
-            android:layout_weight="1"/>
+            android:layout_gravity="start|center_vertical"
+            android:layout_weight="1"
+            android:entries="@array/currencies_default" />
 
         <Spinner
             android:id="@+id/spinner_interval"
-            android:entries="@array/exchanges_default"
             android:layout_width="@dimen/spinner_width"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_weight="1"/>
+            android:layout_gravity="start|center_vertical"
+            android:layout_weight="1"
+            android:entries="@array/exchanges_default" />
 
     </LinearLayout>
 
-    <Spinner
-        android:id="@+id/spinner_exchange"
-        android:entries="@array/exchanges_default"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:id="@+id/spinner_line2"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
         android:layout_below="@id/spinner_line"
-        android:layout_weight="1"/>
+        android:orientation="horizontal"
+        android:weightSum="1.2">
+
+        <Spinner
+            android:id="@+id/spinner_exchange"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_weight="1"
+            android:entries="@array/exchanges_default" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_gravity="end|center_vertical"
+            android:gravity="end|center_vertical"
+            android:id="@+id/text_latest"
+            android:text="@string/text_latest" />
+
+    </LinearLayout>
+
 
     <com.github.mikephil.charting.charts.CombinedChart
         android:id="@+id/chart_candle"
@@ -62,6 +79,18 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@id/spinner_exchange" />
+        android:layout_below="@id/spinner_line2" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/button_refresh"
+        android:src="@drawable/ic_refresh" />
 
 </RelativeLayout>

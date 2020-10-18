@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1B5E20</color>
+    <color name="colorBackground">#000000</color>
+    <color name="colorOnBackground">#FFFFFF</color>
+    <color name="colorAccent">#43A047</color>
+
+    <color name="colorChartDecreasing">#FF5252</color>
+    <color name="colorChartIncreasing">#00E676</color>
+    <color name="colorChartNeutral">#3D5AFE</color>
+    <color name="colorChartCandle">#7B7F9A</color>
+    <color name="colorChartCandleText">#00E676</color>
+
+    <color name="colorChartBar">#40C4FF</color>
+    <color name="colorChartBarText">#536DFE</color>
+</resources>

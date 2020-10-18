@@ -14,12 +14,12 @@ import java.util.Locale;
  */
 
 
-public class TimestampAxisValueFormatter implements IAxisValueFormatter
-{
+public class TimestampAxisValueFormatter implements IAxisValueFormatter {
+
     public enum Formatting {
             Minute ("HH:mm"),
-            Hour   ("dd HH:00"),
-            Day   ("dd MMM");
+            Hour   ("EEE:HH'h'"),
+            Day   ("MMM dd");
 
         private final String format;
             Formatting(String format) {
@@ -27,9 +27,9 @@ public class TimestampAxisValueFormatter implements IAxisValueFormatter
         }
     }
 
-    private List<Integer> timestamps = null;
-    private DateFormat mDataFormat;
-    private Date mDate;
+    private final List<Integer> timestamps;
+    private final DateFormat mDataFormat;
+    private final Date mDate;
 
     public TimestampAxisValueFormatter(List<Integer> timestamps, String interval) {
         this.timestamps = timestamps;
@@ -37,19 +37,9 @@ public class TimestampAxisValueFormatter implements IAxisValueFormatter
         this.mDate = new Date();
     }
 
-    /**
-     * Called when a value from an axis is to be formatted
-     * before being drawn. For performance reasons, avoid excessive calculations
-     * and memory allocations inside this method.
-     *
-     * @param value the value to be formatted
-     * @param axis  the axis the value belongs to
-     * @return
-     */
     @Override
     public String getFormattedValue(float value, AxisBase axis) {
         long timestamp = timestamps.get((int) value);
-
         try{
             mDate.setTime(timestamp*1000);
             return mDataFormat.format(mDate);

@@ -2,6 +2,144 @@
     <string name="app_name">Cryptah</string>
     <string name="title_activity_candle">Cryptah</string>
 
+    <string name="text_latest_placeholders">Latest: %1$f %2$s</string>
+    <string name="text_latest">Latest:</string>
+
+    <string name="button_refresh">Refresh</string>
+
+    <string name="coin_choice">Chooce Coins:</string>
+    <string name="coin_edit">Edit…</string>
+    <string name="choice_ok">OK</string>
+    <string name="choice_cancel">Cancel</string>
+
+    <string name="pref_file_key">Pref_Cryptah</string>
+    <string name="pref_coins">Pref_Coins</string>
+    <string name="pref_coin">Pref_Coin</string>
+    <string name="pref_currency">Pref_Currency</string>
+    <string name="pref_interval">Pref_Interval</string>
+
+    <string name="legendOHLC">OHLC</string>
+    <string name="legendVolume">Volume</string>
+
+    <string-array name="coins_100">
+        <item>BTC</item>
+        <item>ETH</item>
+        <item>BCH</item>
+        <item>XRP</item>
+        <item>LINK</item>
+        <item>LTC</item>
+        <item>EOS</item>
+        <item>BNB</item>
+        <item>FIL</item>
+        <item>TRX</item>
+        <item>BSV</item>
+        <item>YFI</item>
+        <item>ZEC</item>
+        <item>USDT</item>
+        <item>XMR</item>
+        <item>AAVE</item>
+        <item>ABBC</item>
+        <item>ADA</item>
+        <item>ALGO</item>
+        <item>ANKR</item>
+        <item>APM</item>
+        <item>ATOM</item>
+        <item>BAL</item>
+        <item>BAND</item>
+        <item>BAT</item>
+        <item>BKK</item>
+        <item>BTM</item>
+        <item>BTMX</item>
+        <item>BTT</item>
+        <item>CELO</item>
+        <item>CETH</item>
+        <item>COMP</item>
+        <item>CRO</item>
+        <item>CRV</item>
+        <item>DASH</item>
+        <item>DIA</item>
+        <item>DOGE</item>
+        <item>DOT</item>
+        <item>ETC</item>
+        <item>FTM</item>
+        <item>GTO</item>
+        <item>GXS</item>
+        <item>HIVE</item>
+        <item>HT</item>
+        <item>ICX</item>
+        <item>IOST</item>
+        <item>ITC</item>
+        <item>JST</item>
+        <item>KAVA</item>
+        <item>KCASH</item>
+        <item>KCS</item>
+        <item>KNC</item>
+        <item>KSM</item>
+        <item>LEND</item>
+        <item>LET</item>
+        <item>LRC</item>
+        <item>MIOTA</item>
+        <item>MKR</item>
+        <item>NEAR</item>
+        <item>NEO</item>
+        <item>NEST</item>
+        <item>NULS</item>
+        <item>OKB</item>
+        <item>OMG</item>
+        <item>ONT</item>
+        <item>PAX</item>
+        <item>PAY</item>
+        <item>QTUM</item>
+        <item>REN</item>
+        <item>RFR</item>
+        <item>RSR</item>
+        <item>SEELE</item>
+        <item>SNX</item>
+        <item>SRM</item>
+        <item>STORJ</item>
+        <item>SUSHI</item>
+        <item>SXP</item>
+        <item>THETA</item>
+        <item>THR</item>
+        <item>TOMO</item>
+        <item>TRB</item>
+        <item>TSLA.CUR</item>
+        <item>TT</item>
+        <item>TUSD</item>
+        <item>UNI</item>
+        <item>US30.CUR</item>
+        <item>US500.CUR</item>
+        <item>USDC</item>
+        <item>VET</item>
+        <item>WAVES</item>
+        <item>WBTC</item>
+        <item>WICC</item>
+        <item>XEM</item>
+        <item>XLM</item>
+        <item>XTZ</item>
+        <item>XVS</item>
+        <item>YFII</item>
+        <item>ZB</item>
+        <item>ZIL</item>
+        <item>ZRX</item>
+    </string-array>
+
+    <string-array name="currencies">
+        <item>USD</item>
+        <item>EUR</item>
+        <item>GBP</item>
+        <item>JPY</item>
+        <item>KRW</item>
+        <item>BTC</item>
+        <item>USDT</item>
+    </string-array>
+
+    <string-array name="intervals">
+        <item>Minute</item>
+        <item>Hour</item>
+        <item>Day</item>
+    </string-array>
+
     <string-array name="coins_default">
         <item>Coin</item>
     </string-array>
